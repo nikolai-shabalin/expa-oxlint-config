@@ -1,0 +1,34 @@
+{
+  "name": "@expa/oxlint-config",
+  "version": "1.0.0",
+  "description": "Конфигурация oxlint",
+  "files": [
+    ".oxlintrc.json",
+    "README.md"
+  ],
+  "publishConfig": { "access": "public" },
+  "keywords": [
+    "oxlint",
+    "linting",
+    "config",
+    "expa",
+    "javascript",
+    "typescript"
+  ],
+  "author": "dev.nikolai.shabalin@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expa/oxlint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/expa/oxlint-config/issues"
+  },
+  "homepage": "https://github.com/expa/oxlint-config#readme",
+  "peerDependencies": {
+    "oxlint": "^1.15.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
