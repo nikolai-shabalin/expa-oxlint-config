@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "rules": {
+    "no-await-in-loop": "warn",
+    "no-useless-call": "warn",
+    "no-accumulating-spread": "warn",
+    "no-array-index-key": "warn",
+    "jsx-no-jsx-as-prop": "warn",
+    "jsx-no-new-array-as-prop": "warn",
+    "jsx-no-new-function-as-prop": "warn",
+    "jsx-no-new-object-as-prop": "warn",
+    "prefer-array-find": "warn",
+    "prefer-array-flat-map": "warn",
+    "prefer-set-has": "warn"
+  }
+}

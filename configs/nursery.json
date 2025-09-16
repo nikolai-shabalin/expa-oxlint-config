@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "rules": {
+    "getter-return": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "export": "warn",
+    "named": "warn",
+    "no-map-spread": "warn",
+    "no-return-in-finally": "warn",
+    "require-render-return": "warn"
+  }
+}

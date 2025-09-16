@@ -2,8 +2,12 @@
   "name": "@expa/oxlint-config",
   "version": "1.0.0",
   "description": "Конфигурация oxlint",
+  "scripts": {
+    "test": "oxlint --config .oxlintrc.json test-functions.js"
+  },
   "files": [
     ".oxlintrc.json",
+    "configs/",
     "README.md"
   ],
   "publishConfig": { "access": "public" },
