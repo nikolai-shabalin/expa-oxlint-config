@@ -1,12 +1,25 @@
 # correctness/no-unused-labels
-Правило `no-unused-labels` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-labels.
+
+Правило `no-unused-labels` из набора `correctness` контролирует аспект «No Unused Labels». Оно помогает избегать проблем в коде, связанных с требованием «no unused labels», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-labels.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-unused-labels выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-labels
+function examplePassingCorrectness() {
+  // Требование «no unused labels» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-unused-labels сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-labels
+function exampleFailingCorrectness() {
+  // Требование «no unused labels» нарушено.
+  return false;
+}
 ```

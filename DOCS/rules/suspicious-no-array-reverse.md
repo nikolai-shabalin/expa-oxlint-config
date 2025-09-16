@@ -1,12 +1,25 @@
 # suspicious/no-array-reverse
-Правило `no-array-reverse` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reverse.
+
+Правило `no-array-reverse` из набора `suspicious` контролирует аспект «No Array Reverse». Оно помогает избегать проблем в коде, связанных с требованием «no array reverse», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reverse.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-array-reverse выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reverse
+function examplePassingSuspicious() {
+  // Требование «no array reverse» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-array-reverse сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reverse
+function exampleFailingSuspicious() {
+  // Требование «no array reverse» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # suspicious/no-absolute-path
-Правило `no-absolute-path` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-absolute-path.
+
+Правило `no-absolute-path` из набора `suspicious` контролирует аспект «No Absolute Path». Оно помогает избегать проблем в коде, связанных с требованием «no absolute path», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-absolute-path.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-absolute-path выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-absolute-path
+function examplePassingSuspicious() {
+  // Требование «no absolute path» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-absolute-path сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-absolute-path
+function exampleFailingSuspicious() {
+  // Требование «no absolute path» нарушено.
+  return false;
+}
 ```

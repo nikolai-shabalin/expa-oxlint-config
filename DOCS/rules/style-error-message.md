@@ -1,12 +1,25 @@
 # style/error-message
-Правило `error-message` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/error-message.
+
+Правило `error-message` из набора `style` контролирует аспект «Error Message». Оно помогает избегать проблем в коде, связанных с требованием «error message», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/error-message.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/error-message выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/error-message
+function examplePassingStyle() {
+  // Требование «error message» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/error-message сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/error-message
+function exampleFailingStyle() {
+  // Требование «error message» нарушено.
+  return false;
+}
 ```

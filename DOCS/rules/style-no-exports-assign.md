@@ -1,12 +1,25 @@
 # style/no-exports-assign
-Правило `no-exports-assign` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-exports-assign.
+
+Правило `no-exports-assign` из набора `style` контролирует аспект «No Exports Assign». Оно помогает избегать проблем в коде, связанных с требованием «no exports assign», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-exports-assign.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-exports-assign выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-exports-assign
+function examplePassingStyle() {
+  // Требование «no exports assign» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-exports-assign сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-exports-assign
+function exampleFailingStyle() {
+  // Требование «no exports assign» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # suspicious/no-useless-constructor
-Правило `no-useless-constructor` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-constructor.
+
+Правило `no-useless-constructor` из набора `suspicious` контролирует аспект «No Useless Constructor». Оно помогает избегать проблем в коде, связанных с требованием «no useless constructor», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-constructor.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-useless-constructor выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-constructor
+function examplePassingSuspicious() {
+  // Требование «no useless constructor» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-useless-constructor сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-constructor
+function exampleFailingSuspicious() {
+  // Требование «no useless constructor» нарушено.
+  return false;
+}
 ```

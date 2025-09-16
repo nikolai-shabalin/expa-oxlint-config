@@ -1,12 +1,25 @@
 # correctness/no-irregular-whitespace
-Правило `no-irregular-whitespace` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-irregular-whitespace.
+
+Правило `no-irregular-whitespace` из набора `correctness` контролирует аспект «No Irregular Whitespace». Оно помогает избегать проблем в коде, связанных с требованием «no irregular whitespace», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-irregular-whitespace.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-irregular-whitespace выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-irregular-whitespace
+function examplePassingCorrectness() {
+  // Требование «no irregular whitespace» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-irregular-whitespace сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-irregular-whitespace
+function exampleFailingCorrectness() {
+  // Требование «no irregular whitespace» нарушено.
+  return false;
+}
 ```

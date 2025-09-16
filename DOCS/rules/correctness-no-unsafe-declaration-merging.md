@@ -1,12 +1,25 @@
 # correctness/no-unsafe-declaration-merging
-Правило `no-unsafe-declaration-merging` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-declaration-merging.
+
+Правило `no-unsafe-declaration-merging` из набора `correctness` контролирует аспект «No Unsafe Declaration Merging». Оно помогает избегать проблем в коде, связанных с требованием «no unsafe declaration merging», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-declaration-merging.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-unsafe-declaration-merging выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-declaration-merging
+function examplePassingCorrectness() {
+  // Требование «no unsafe declaration merging» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-unsafe-declaration-merging сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-declaration-merging
+function exampleFailingCorrectness() {
+  // Требование «no unsafe declaration merging» нарушено.
+  return false;
+}
 ```

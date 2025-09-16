@@ -1,12 +1,25 @@
 # style/define-props-declaration
-Правило `define-props-declaration` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/define-props-declaration.
+
+Правило `define-props-declaration` из набора `style` контролирует аспект «Define Props Declaration». Оно помогает избегать проблем в коде, связанных с требованием «define props declaration», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/define-props-declaration.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/define-props-declaration выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/define-props-declaration
+function examplePassingStyle() {
+  // Требование «define props declaration» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/define-props-declaration сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/define-props-declaration
+function exampleFailingStyle() {
+  // Требование «define props declaration» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # correctness/check-property-names
-Правило `check-property-names` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/check-property-names.
+
+Правило `check-property-names` из набора `correctness` контролирует аспект «Check Property Names». Оно помогает избегать проблем в коде, связанных с требованием «check property names», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/check-property-names.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/check-property-names выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/check-property-names
+function examplePassingCorrectness() {
+  // Требование «check property names» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/check-property-names сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/check-property-names
+function exampleFailingCorrectness() {
+  // Требование «check property names» нарушено.
+  return false;
+}
 ```

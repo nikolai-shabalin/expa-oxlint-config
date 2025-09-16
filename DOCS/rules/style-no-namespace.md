@@ -1,12 +1,25 @@
 # style/no-namespace
-Правило `no-namespace` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-namespace.
+
+Правило `no-namespace` из набора `style` контролирует аспект «No Namespace». Оно помогает избегать проблем в коде, связанных с требованием «no namespace», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-namespace.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-namespace выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-namespace
+function examplePassingStyle() {
+  // Требование «no namespace» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-namespace сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-namespace
+function exampleFailingStyle() {
+  // Требование «no namespace» нарушено.
+  return false;
+}
 ```

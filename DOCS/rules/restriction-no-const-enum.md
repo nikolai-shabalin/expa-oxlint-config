@@ -1,12 +1,25 @@
 # restriction/no-const-enum
-Правило `no-const-enum` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-const-enum.
+
+Правило `no-const-enum` из набора `restriction` контролирует аспект «No Const Enum». Оно помогает избегать проблем в коде, связанных с требованием «no const enum», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-const-enum.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-const-enum выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-const-enum
+function examplePassingRestriction() {
+  // Требование «no const enum» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-const-enum сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-const-enum
+function exampleFailingRestriction() {
+  // Требование «no const enum» нарушено.
+  return false;
+}
 ```

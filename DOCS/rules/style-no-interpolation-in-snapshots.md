@@ -1,12 +1,25 @@
 # style/no-interpolation-in-snapshots
-Правило `no-interpolation-in-snapshots` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-interpolation-in-snapshots.
+
+Правило `no-interpolation-in-snapshots` из набора `style` контролирует аспект «No Interpolation In Snapshots». Оно помогает избегать проблем в коде, связанных с требованием «no interpolation in snapshots», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-interpolation-in-snapshots.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-interpolation-in-snapshots выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-interpolation-in-snapshots
+function examplePassingStyle() {
+  // Требование «no interpolation in snapshots» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-interpolation-in-snapshots сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-interpolation-in-snapshots
+function exampleFailingStyle() {
+  // Требование «no interpolation in snapshots» нарушено.
+  return false;
+}
 ```

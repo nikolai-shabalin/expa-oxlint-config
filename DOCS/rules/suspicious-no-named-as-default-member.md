@@ -1,12 +1,25 @@
 # suspicious/no-named-as-default-member
-Правило `no-named-as-default-member` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-named-as-default-member.
+
+Правило `no-named-as-default-member` из набора `suspicious` контролирует аспект «No Named As Default Member». Оно помогает избегать проблем в коде, связанных с требованием «no named as default member», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-named-as-default-member.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-named-as-default-member выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-named-as-default-member
+function examplePassingSuspicious() {
+  // Требование «no named as default member» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-named-as-default-member сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-named-as-default-member
+function exampleFailingSuspicious() {
+  // Требование «no named as default member» нарушено.
+  return false;
+}
 ```

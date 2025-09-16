@@ -1,12 +1,25 @@
 # style/avoid-new
-Правило `avoid-new` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/avoid-new.
+
+Правило `avoid-new` из набора `style` контролирует аспект «Avoid New». Оно помогает избегать проблем в коде, связанных с требованием «avoid new», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/avoid-new.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/avoid-new выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/avoid-new
+function examplePassingStyle() {
+  // Требование «avoid new» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/avoid-new сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/avoid-new
+function exampleFailingStyle() {
+  // Требование «avoid new» нарушено.
+  return false;
+}
 ```

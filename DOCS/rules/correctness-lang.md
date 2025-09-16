@@ -1,12 +1,25 @@
 # correctness/lang
-Правило `lang` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/lang.
+
+Правило `lang` из набора `correctness` контролирует аспект «Lang». Оно помогает избегать проблем в коде, связанных с требованием «lang», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/lang.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/lang выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/lang
+function examplePassingCorrectness() {
+  // Требование «lang» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/lang сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/lang
+function exampleFailingCorrectness() {
+  // Требование «lang» нарушено.
+  return false;
+}
 ```

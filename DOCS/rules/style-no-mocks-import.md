@@ -1,12 +1,25 @@
 # style/no-mocks-import
-Правило `no-mocks-import` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-mocks-import.
+
+Правило `no-mocks-import` из набора `style` контролирует аспект «No Mocks Import». Оно помогает избегать проблем в коде, связанных с требованием «no mocks import», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-mocks-import.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-mocks-import выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-mocks-import
+function examplePassingStyle() {
+  // Требование «no mocks import» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-mocks-import сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-mocks-import
+function exampleFailingStyle() {
+  // Требование «no mocks import» нарушено.
+  return false;
+}
 ```

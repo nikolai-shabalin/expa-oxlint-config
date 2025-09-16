@@ -1,12 +1,25 @@
 # style/max-nested-describe
-Правило `max-nested-describe` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/max-nested-describe.
+
+Правило `max-nested-describe` из набора `style` контролирует аспект «Max Nested Describe». Оно помогает избегать проблем в коде, связанных с требованием «max nested describe», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/max-nested-describe.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/max-nested-describe выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-nested-describe
+function examplePassingStyle() {
+  // Требование «max nested describe» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/max-nested-describe сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-nested-describe
+function exampleFailingStyle() {
+  // Требование «max nested describe» нарушено.
+  return false;
+}
 ```

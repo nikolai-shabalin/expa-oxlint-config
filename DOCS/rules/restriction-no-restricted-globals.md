@@ -1,12 +1,25 @@
 # restriction/no-restricted-globals
-Правило `no-restricted-globals` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-globals.
+
+Правило `no-restricted-globals` из набора `restriction` контролирует аспект «No Restricted Globals». Оно помогает избегать проблем в коде, связанных с требованием «no restricted globals», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-globals.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-restricted-globals выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-globals
+function examplePassingRestriction() {
+  // Требование «no restricted globals» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-restricted-globals сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-globals
+function exampleFailingRestriction() {
+  // Требование «no restricted globals» нарушено.
+  return false;
+}
 ```

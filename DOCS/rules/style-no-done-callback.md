@@ -1,12 +1,25 @@
 # style/no-done-callback
-Правило `no-done-callback` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-done-callback.
+
+Правило `no-done-callback` из набора `style` контролирует аспект «No Done Callback». Оно помогает избегать проблем в коде, связанных с требованием «no done callback», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-done-callback.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-done-callback выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-done-callback
+function examplePassingStyle() {
+  // Требование «no done callback» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-done-callback сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-done-callback
+function exampleFailingStyle() {
+  // Требование «no done callback» нарушено.
+  return false;
+}
 ```

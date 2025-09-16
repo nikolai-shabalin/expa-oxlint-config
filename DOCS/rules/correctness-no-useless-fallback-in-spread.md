@@ -1,12 +1,25 @@
 # correctness/no-useless-fallback-in-spread
-Правило `no-useless-fallback-in-spread` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-fallback-in-spread.
+
+Правило `no-useless-fallback-in-spread` из набора `correctness` контролирует аспект «No Useless Fallback In Spread». Оно помогает избегать проблем в коде, связанных с требованием «no useless fallback in spread», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-fallback-in-spread.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-useless-fallback-in-spread выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-fallback-in-spread
+function examplePassingCorrectness() {
+  // Требование «no useless fallback in spread» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-useless-fallback-in-spread сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-fallback-in-spread
+function exampleFailingCorrectness() {
+  // Требование «no useless fallback in spread» нарушено.
+  return false;
+}
 ```

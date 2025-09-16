@@ -1,12 +1,25 @@
 # correctness/no-page-custom-font
-Правило `no-page-custom-font` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-page-custom-font.
+
+Правило `no-page-custom-font` из набора `correctness` контролирует аспект «No Page Custom Font». Оно помогает избегать проблем в коде, связанных с требованием «no page custom font», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-page-custom-font.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-page-custom-font выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-page-custom-font
+function examplePassingCorrectness() {
+  // Требование «no page custom font» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-page-custom-font сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-page-custom-font
+function exampleFailingCorrectness() {
+  // Требование «no page custom font» нарушено.
+  return false;
+}
 ```

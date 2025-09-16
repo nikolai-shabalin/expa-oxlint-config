@@ -1,12 +1,25 @@
 # pedantic/switch-exhaustiveness-check
-Правило `switch-exhaustiveness-check` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/switch-exhaustiveness-check.
+
+Правило `switch-exhaustiveness-check` из набора `pedantic` контролирует аспект «Switch Exhaustiveness Check». Оно помогает избегать проблем в коде, связанных с требованием «switch exhaustiveness check», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/switch-exhaustiveness-check.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/switch-exhaustiveness-check выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/switch-exhaustiveness-check
+function examplePassingPedantic() {
+  // Требование «switch exhaustiveness check» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/switch-exhaustiveness-check сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/switch-exhaustiveness-check
+function exampleFailingPedantic() {
+  // Требование «switch exhaustiveness check» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # suspicious/no-new
-Правило `no-new` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new.
+
+Правило `no-new` из набора `suspicious` контролирует аспект «No New». Оно помогает избегать проблем в коде, связанных с требованием «no new», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-new.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-new выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new
+function examplePassingSuspicious() {
+  // Требование «no new» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-new сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new
+function exampleFailingSuspicious() {
+  // Требование «no new» нарушено.
+  return false;
+}
 ```

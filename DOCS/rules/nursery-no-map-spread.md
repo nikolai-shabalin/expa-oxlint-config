@@ -1,12 +1,25 @@
 # nursery/no-map-spread
-Правило `no-map-spread` из набора `nursery` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-map-spread.
+
+Правило `no-map-spread` из набора `nursery` контролирует аспект «No Map Spread». Оно помогает избегать проблем в коде, связанных с требованием «no map spread», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-map-spread.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило nursery/no-map-spread выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-map-spread
+function examplePassingNursery() {
+  // Требование «no map spread» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило nursery/no-map-spread сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-map-spread
+function exampleFailingNursery() {
+  // Требование «no map spread» нарушено.
+  return false;
+}
 ```

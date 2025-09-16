@@ -1,12 +1,25 @@
 # style/prefer-expect-resolves
-Правило `prefer-expect-resolves` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-expect-resolves.
+
+Правило `prefer-expect-resolves` из набора `style` контролирует аспект «Prefer Expect Resolves». Оно помогает избегать проблем в коде, связанных с требованием «prefer expect resolves», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-expect-resolves.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-expect-resolves выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-expect-resolves
+function examplePassingStyle() {
+  // Требование «prefer expect resolves» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-expect-resolves сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-expect-resolves
+function exampleFailingStyle() {
+  // Требование «prefer expect resolves» нарушено.
+  return false;
+}
 ```

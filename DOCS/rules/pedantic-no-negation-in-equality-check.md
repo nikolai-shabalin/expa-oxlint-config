@@ -1,12 +1,25 @@
 # pedantic/no-negation-in-equality-check
-Правило `no-negation-in-equality-check` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-negation-in-equality-check.
+
+Правило `no-negation-in-equality-check` из набора `pedantic` контролирует аспект «No Negation In Equality Check». Оно помогает избегать проблем в коде, связанных с требованием «no negation in equality check», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-negation-in-equality-check.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/no-negation-in-equality-check выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-negation-in-equality-check
+function examplePassingPedantic() {
+  // Требование «no negation in equality check» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/no-negation-in-equality-check сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-negation-in-equality-check
+function exampleFailingPedantic() {
+  // Требование «no negation in equality check» нарушено.
+  return false;
+}
 ```

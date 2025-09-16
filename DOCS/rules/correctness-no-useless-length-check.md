@@ -1,12 +1,25 @@
 # correctness/no-useless-length-check
-Правило `no-useless-length-check` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-length-check.
+
+Правило `no-useless-length-check` из набора `correctness` контролирует аспект «No Useless Length Check». Оно помогает избегать проблем в коде, связанных с требованием «no useless length check», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-length-check.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-useless-length-check выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-length-check
+function examplePassingCorrectness() {
+  // Требование «no useless length check» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-useless-length-check сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-length-check
+function exampleFailingCorrectness() {
+  // Требование «no useless length check» нарушено.
+  return false;
+}
 ```

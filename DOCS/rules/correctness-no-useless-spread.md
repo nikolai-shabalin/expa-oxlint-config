@@ -1,12 +1,25 @@
 # correctness/no-useless-spread
-Правило `no-useless-spread` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-spread.
+
+Правило `no-useless-spread` из набора `correctness` контролирует аспект «No Useless Spread». Оно помогает избегать проблем в коде, связанных с требованием «no useless spread», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-spread.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-useless-spread выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-spread
+function examplePassingCorrectness() {
+  // Требование «no useless spread» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-useless-spread сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-useless-spread
+function exampleFailingCorrectness() {
+  // Требование «no useless spread» нарушено.
+  return false;
+}
 ```

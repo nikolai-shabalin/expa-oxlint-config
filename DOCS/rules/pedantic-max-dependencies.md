@@ -1,12 +1,25 @@
 # pedantic/max-dependencies
-Правило `max-dependencies` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/max-dependencies.
+
+Правило `max-dependencies` из набора `pedantic` контролирует аспект «Max Dependencies». Оно помогает избегать проблем в коде, связанных с требованием «max dependencies», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/max-dependencies.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/max-dependencies выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-dependencies
+function examplePassingPedantic() {
+  // Требование «max dependencies» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/max-dependencies сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-dependencies
+function exampleFailingPedantic() {
+  // Требование «max dependencies» нарушено.
+  return false;
+}
 ```

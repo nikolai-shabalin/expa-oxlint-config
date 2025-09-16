@@ -1,12 +1,25 @@
 # restriction/no-restricted-imports
-Правило `no-restricted-imports` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-imports.
+
+Правило `no-restricted-imports` из набора `restriction` контролирует аспект «No Restricted Imports». Оно помогает избегать проблем в коде, связанных с требованием «no restricted imports», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-imports.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-restricted-imports выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-imports
+function examplePassingRestriction() {
+  // Требование «no restricted imports» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-restricted-imports сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-restricted-imports
+function exampleFailingRestriction() {
+  // Требование «no restricted imports» нарушено.
+  return false;
+}
 ```

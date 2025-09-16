@@ -1,12 +1,25 @@
 # pedantic/radix
-Правило `radix` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/radix.
+
+Правило `radix` из набора `pedantic` контролирует аспект «Radix». Оно помогает избегать проблем в коде, связанных с требованием «radix», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/radix.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/radix выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/radix
+function examplePassingPedantic() {
+  // Требование «radix» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/radix сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/radix
+function exampleFailingPedantic() {
+  // Требование «radix» нарушено.
+  return false;
+}
 ```

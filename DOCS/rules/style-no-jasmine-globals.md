@@ -1,12 +1,25 @@
 # style/no-jasmine-globals
-Правило `no-jasmine-globals` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-jasmine-globals.
+
+Правило `no-jasmine-globals` из набора `style` контролирует аспект «No Jasmine Globals». Оно помогает избегать проблем в коде, связанных с требованием «no jasmine globals», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-jasmine-globals.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-jasmine-globals выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-jasmine-globals
+function examplePassingStyle() {
+  // Требование «no jasmine globals» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-jasmine-globals сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-jasmine-globals
+function exampleFailingStyle() {
+  // Требование «no jasmine globals» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # style/prefer-reflect-apply
-Правило `prefer-reflect-apply` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-reflect-apply.
+
+Правило `prefer-reflect-apply` из набора `style` контролирует аспект «Prefer Reflect Apply». Оно помогает избегать проблем в коде, связанных с требованием «prefer reflect apply», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-reflect-apply.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-reflect-apply выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-reflect-apply
+function examplePassingStyle() {
+  // Требование «prefer reflect apply» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-reflect-apply сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-reflect-apply
+function exampleFailingStyle() {
+  // Требование «prefer reflect apply» нарушено.
+  return false;
+}
 ```

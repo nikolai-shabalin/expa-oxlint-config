@@ -1,12 +1,25 @@
 # style/func-style
-Правило `func-style` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/func-style.
+
+Правило `func-style` из набора `style` контролирует аспект «Func Style». Оно помогает избегать проблем в коде, связанных с требованием «func style», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/func-style.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/func-style выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/func-style
+function examplePassingStyle() {
+  // Требование «func style» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/func-style сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/func-style
+function exampleFailingStyle() {
+  // Требование «func style» нарушено.
+  return false;
+}
 ```

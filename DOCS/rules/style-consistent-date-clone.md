@@ -1,12 +1,25 @@
 # style/consistent-date-clone
-Правило `consistent-date-clone` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-date-clone.
+
+Правило `consistent-date-clone` из набора `style` контролирует аспект «Consistent Date Clone». Оно помогает избегать проблем в коде, связанных с требованием «consistent date clone», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/consistent-date-clone.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/consistent-date-clone выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-date-clone
+function examplePassingStyle() {
+  // Требование «consistent date clone» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/consistent-date-clone сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-date-clone
+function exampleFailingStyle() {
+  // Требование «consistent date clone» нарушено.
+  return false;
+}
 ```

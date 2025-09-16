@@ -1,12 +1,25 @@
 # pedantic/sort-vars
-Правило `sort-vars` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/sort-vars.
+
+Правило `sort-vars` из набора `pedantic` контролирует аспект «Sort Vars». Оно помогает избегать проблем в коде, связанных с требованием «sort vars», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/sort-vars.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/sort-vars выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/sort-vars
+function examplePassingPedantic() {
+  // Требование «sort vars» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/sort-vars сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/sort-vars
+function exampleFailingPedantic() {
+  // Требование «sort vars» нарушено.
+  return false;
+}
 ```

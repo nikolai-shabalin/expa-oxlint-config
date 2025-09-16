@@ -1,12 +1,25 @@
 # suspicious/jsx-no-script-url
-Правило `jsx-no-script-url` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/jsx-no-script-url.
+
+Правило `jsx-no-script-url` из набора `suspicious` контролирует аспект «Jsx No Script Url». Оно помогает избегать проблем в коде, связанных с требованием «jsx no script url», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/jsx-no-script-url.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/jsx-no-script-url выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/jsx-no-script-url
+function examplePassingSuspicious() {
+  // Требование «jsx no script url» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/jsx-no-script-url сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/jsx-no-script-url
+function exampleFailingSuspicious() {
+  // Требование «jsx no script url» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # style/consistent-generic-constructors
-Правило `consistent-generic-constructors` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-generic-constructors.
+
+Правило `consistent-generic-constructors` из набора `style` контролирует аспект «Consistent Generic Constructors». Оно помогает избегать проблем в коде, связанных с требованием «consistent generic constructors», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/consistent-generic-constructors.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/consistent-generic-constructors выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-generic-constructors
+function examplePassingStyle() {
+  // Требование «consistent generic constructors» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/consistent-generic-constructors сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-generic-constructors
+function exampleFailingStyle() {
+  // Требование «consistent generic constructors» нарушено.
+  return false;
+}
 ```

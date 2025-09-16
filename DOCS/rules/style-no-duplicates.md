@@ -1,12 +1,25 @@
 # style/no-duplicates
-Правило `no-duplicates` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicates.
+
+Правило `no-duplicates` из набора `style` контролирует аспект «No Duplicates». Оно помогает избегать проблем в коде, связанных с требованием «no duplicates», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicates.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-duplicates выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicates
+function examplePassingStyle() {
+  // Требование «no duplicates» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-duplicates сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicates
+function exampleFailingStyle() {
+  // Требование «no duplicates» нарушено.
+  return false;
+}
 ```

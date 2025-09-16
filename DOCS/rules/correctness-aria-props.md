@@ -1,12 +1,25 @@
 # correctness/aria-props
-Правило `aria-props` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/aria-props.
+
+Правило `aria-props` из набора `correctness` контролирует аспект «Aria Props». Оно помогает избегать проблем в коде, связанных с требованием «aria props», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/aria-props.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/aria-props выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/aria-props
+function examplePassingCorrectness() {
+  // Требование «aria props» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/aria-props сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/aria-props
+function exampleFailingCorrectness() {
+  // Требование «aria props» нарушено.
+  return false;
+}
 ```

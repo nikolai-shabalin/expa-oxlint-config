@@ -1,12 +1,25 @@
 # pedantic/max-depth
-Правило `max-depth` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/max-depth.
+
+Правило `max-depth` из набора `pedantic` контролирует аспект «Max Depth». Оно помогает избегать проблем в коде, связанных с требованием «max depth», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/max-depth.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/max-depth выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-depth
+function examplePassingPedantic() {
+  // Требование «max depth» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/max-depth сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-depth
+function exampleFailingPedantic() {
+  // Требование «max depth» нарушено.
+  return false;
+}
 ```

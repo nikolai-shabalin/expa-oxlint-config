@@ -1,12 +1,25 @@
 # style/prefer-object-has-own
-Правило `prefer-object-has-own` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-has-own.
+
+Правило `prefer-object-has-own` из набора `style` контролирует аспект «Prefer Object Has Own». Оно помогает избегать проблем в коде, связанных с требованием «prefer object has own», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-has-own.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-object-has-own выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-has-own
+function examplePassingStyle() {
+  // Требование «prefer object has own» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-object-has-own сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-has-own
+function exampleFailingStyle() {
+  // Требование «prefer object has own» нарушено.
+  return false;
+}
 ```

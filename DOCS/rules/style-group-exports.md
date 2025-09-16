@@ -1,12 +1,25 @@
 # style/group-exports
-Правило `group-exports` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/group-exports.
+
+Правило `group-exports` из набора `style` контролирует аспект «Group Exports». Оно помогает избегать проблем в коде, связанных с требованием «group exports», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/group-exports.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/group-exports выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/group-exports
+function examplePassingStyle() {
+  // Требование «group exports» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/group-exports сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/group-exports
+function exampleFailingStyle() {
+  // Требование «group exports» нарушено.
+  return false;
+}
 ```

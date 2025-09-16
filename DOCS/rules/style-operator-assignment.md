@@ -1,12 +1,25 @@
 # style/operator-assignment
-Правило `operator-assignment` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/operator-assignment.
+
+Правило `operator-assignment` из набора `style` контролирует аспект «Operator Assignment». Оно помогает избегать проблем в коде, связанных с требованием «operator assignment», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/operator-assignment.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/operator-assignment выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/operator-assignment
+function examplePassingStyle() {
+  // Требование «operator assignment» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/operator-assignment сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/operator-assignment
+function exampleFailingStyle() {
+  // Требование «operator assignment» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # style/no-alias-methods
-Правило `no-alias-methods` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-alias-methods.
+
+Правило `no-alias-methods` из набора `style` контролирует аспект «No Alias Methods». Оно помогает избегать проблем в коде, связанных с требованием «no alias methods», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-alias-methods.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-alias-methods выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-alias-methods
+function examplePassingStyle() {
+  // Требование «no alias methods» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-alias-methods сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-alias-methods
+function exampleFailingStyle() {
+  // Требование «no alias methods» нарушено.
+  return false;
+}
 ```

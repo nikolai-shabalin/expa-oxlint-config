@@ -1,12 +1,25 @@
 # restriction/no-dynamic-delete
-Правило `no-dynamic-delete` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dynamic-delete.
+
+Правило `no-dynamic-delete` из набора `restriction` контролирует аспект «No Dynamic Delete». Оно помогает избегать проблем в коде, связанных с требованием «no dynamic delete», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-dynamic-delete.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-dynamic-delete выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dynamic-delete
+function examplePassingRestriction() {
+  // Требование «no dynamic delete» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-dynamic-delete сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dynamic-delete
+function exampleFailingRestriction() {
+  // Требование «no dynamic delete» нарушено.
+  return false;
+}
 ```

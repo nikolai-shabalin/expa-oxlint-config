@@ -1,12 +1,25 @@
 # nursery/no-unreachable
-Правило `no-unreachable` из набора `nursery` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unreachable.
+
+Правило `no-unreachable` из набора `nursery` контролирует аспект «No Unreachable». Оно помогает избегать проблем в коде, связанных с требованием «no unreachable», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-unreachable.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило nursery/no-unreachable выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unreachable
+function examplePassingNursery() {
+  // Требование «no unreachable» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило nursery/no-unreachable сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unreachable
+function exampleFailingNursery() {
+  // Требование «no unreachable» нарушено.
+  return false;
+}
 ```

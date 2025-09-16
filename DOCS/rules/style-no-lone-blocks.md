@@ -1,12 +1,25 @@
 # style/no-lone-blocks
-Правило `no-lone-blocks` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-lone-blocks.
+
+Правило `no-lone-blocks` из набора `style` контролирует аспект «No Lone Blocks». Оно помогает избегать проблем в коде, связанных с требованием «no lone blocks», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-lone-blocks.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-lone-blocks выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-lone-blocks
+function examplePassingStyle() {
+  // Требование «no lone blocks» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-lone-blocks сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-lone-blocks
+function exampleFailingStyle() {
+  // Требование «no lone blocks» нарушено.
+  return false;
+}
 ```

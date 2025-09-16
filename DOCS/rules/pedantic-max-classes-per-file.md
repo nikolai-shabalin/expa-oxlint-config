@@ -1,12 +1,25 @@
 # pedantic/max-classes-per-file
-Правило `max-classes-per-file` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/max-classes-per-file.
+
+Правило `max-classes-per-file` из набора `pedantic` контролирует аспект «Max Classes Per File». Оно помогает избегать проблем в коде, связанных с требованием «max classes per file», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/max-classes-per-file.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/max-classes-per-file выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-classes-per-file
+function examplePassingPedantic() {
+  // Требование «max classes per file» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/max-classes-per-file сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-classes-per-file
+function exampleFailingPedantic() {
+  // Требование «max classes per file» нарушено.
+  return false;
+}
 ```

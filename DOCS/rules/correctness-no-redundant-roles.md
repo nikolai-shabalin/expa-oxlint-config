@@ -1,12 +1,25 @@
 # correctness/no-redundant-roles
-Правило `no-redundant-roles` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-redundant-roles.
+
+Правило `no-redundant-roles` из набора `correctness` контролирует аспект «No Redundant Roles». Оно помогает избегать проблем в коде, связанных с требованием «no redundant roles», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-redundant-roles.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-redundant-roles выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-redundant-roles
+function examplePassingCorrectness() {
+  // Требование «no redundant roles» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-redundant-roles сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-redundant-roles
+function exampleFailingCorrectness() {
+  // Требование «no redundant roles» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # correctness/no-misused-new
-Правило `no-misused-new` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-misused-new.
+
+Правило `no-misused-new` из набора `correctness` контролирует аспект «No Misused New». Оно помогает избегать проблем в коде, связанных с требованием «no misused new», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-misused-new.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-misused-new выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-misused-new
+function examplePassingCorrectness() {
+  // Требование «no misused new» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-misused-new сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-misused-new
+function exampleFailingCorrectness() {
+  // Требование «no misused new» нарушено.
+  return false;
+}
 ```

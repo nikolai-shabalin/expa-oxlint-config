@@ -1,12 +1,25 @@
 # style/no-ternary
-Правило `no-ternary` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-ternary.
+
+Правило `no-ternary` из набора `style` контролирует аспект «No Ternary». Оно помогает избегать проблем в коде, связанных с требованием «no ternary», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-ternary.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-ternary выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-ternary
+function examplePassingStyle() {
+  // Требование «no ternary» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-ternary сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-ternary
+function exampleFailingStyle() {
+  // Требование «no ternary» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # correctness/no-string-refs
-Правило `no-string-refs` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-string-refs.
+
+Правило `no-string-refs` из набора `correctness` контролирует аспект «No String Refs». Оно помогает избегать проблем в коде, связанных с требованием «no string refs», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-string-refs.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-string-refs выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-string-refs
+function examplePassingCorrectness() {
+  // Требование «no string refs» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-string-refs сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-string-refs
+function exampleFailingCorrectness() {
+  // Требование «no string refs» нарушено.
+  return false;
+}
 ```

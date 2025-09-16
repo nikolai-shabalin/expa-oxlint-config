@@ -1,12 +1,25 @@
 # correctness/no-head-element
-Правило `no-head-element` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-head-element.
+
+Правило `no-head-element` из набора `correctness` контролирует аспект «No Head Element». Оно помогает избегать проблем в коде, связанных с требованием «no head element», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-head-element.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-head-element выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-head-element
+function examplePassingCorrectness() {
+  // Требование «no head element» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-head-element сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-head-element
+function exampleFailingCorrectness() {
+  // Требование «no head element» нарушено.
+  return false;
+}
 ```

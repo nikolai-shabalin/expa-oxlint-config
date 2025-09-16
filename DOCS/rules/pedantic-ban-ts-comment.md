@@ -1,12 +1,25 @@
 # pedantic/ban-ts-comment
-Правило `ban-ts-comment` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/ban-ts-comment.
+
+Правило `ban-ts-comment` из набора `pedantic` контролирует аспект «Ban Ts Comment». Оно помогает избегать проблем в коде, связанных с требованием «ban ts comment», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/ban-ts-comment.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/ban-ts-comment выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/ban-ts-comment
+function examplePassingPedantic() {
+  // Требование «ban ts comment» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/ban-ts-comment сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/ban-ts-comment
+function exampleFailingPedantic() {
+  // Требование «ban ts comment» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # correctness/no-floating-promises
-Правило `no-floating-promises` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-floating-promises.
+
+Правило `no-floating-promises` из набора `correctness` контролирует аспект «No Floating Promises». Оно помогает избегать проблем в коде, связанных с требованием «no floating promises», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-floating-promises.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-floating-promises выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-floating-promises
+function examplePassingCorrectness() {
+  // Требование «no floating promises» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-floating-promises сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-floating-promises
+function exampleFailingCorrectness() {
+  // Требование «no floating promises» нарушено.
+  return false;
+}
 ```

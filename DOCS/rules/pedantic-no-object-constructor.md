@@ -1,12 +1,25 @@
 # pedantic/no-object-constructor
-Правило `no-object-constructor` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-object-constructor.
+
+Правило `no-object-constructor` из набора `pedantic` контролирует аспект «No Object Constructor». Оно помогает избегать проблем в коде, связанных с требованием «no object constructor», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-object-constructor.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/no-object-constructor выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-object-constructor
+function examplePassingPedantic() {
+  // Требование «no object constructor» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/no-object-constructor сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-object-constructor
+function exampleFailingPedantic() {
+  // Требование «no object constructor» нарушено.
+  return false;
+}
 ```

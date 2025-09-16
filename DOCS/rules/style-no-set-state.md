@@ -1,12 +1,25 @@
 # style/no-set-state
-Правило `no-set-state` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-set-state.
+
+Правило `no-set-state` из набора `style` контролирует аспект «No Set State». Оно помогает избегать проблем в коде, связанных с требованием «no set state», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-set-state.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-set-state выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-set-state
+function examplePassingStyle() {
+  // Требование «no set state» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-set-state сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-set-state
+function exampleFailingStyle() {
+  // Требование «no set state» нарушено.
+  return false;
+}
 ```

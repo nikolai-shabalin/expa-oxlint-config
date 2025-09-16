@@ -1,12 +1,25 @@
 # suspicious/no-unsafe-type-assertion
-Правило `no-unsafe-type-assertion` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-type-assertion.
+
+Правило `no-unsafe-type-assertion` из набора `suspicious` контролирует аспект «No Unsafe Type Assertion». Оно помогает избегать проблем в коде, связанных с требованием «no unsafe type assertion», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-type-assertion.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-unsafe-type-assertion выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-type-assertion
+function examplePassingSuspicious() {
+  // Требование «no unsafe type assertion» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-unsafe-type-assertion сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unsafe-type-assertion
+function exampleFailingSuspicious() {
+  // Требование «no unsafe type assertion» нарушено.
+  return false;
+}
 ```

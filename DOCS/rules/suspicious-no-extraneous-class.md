@@ -1,12 +1,25 @@
 # suspicious/no-extraneous-class
-Правило `no-extraneous-class` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-extraneous-class.
+
+Правило `no-extraneous-class` из набора `suspicious` контролирует аспект «No Extraneous Class». Оно помогает избегать проблем в коде, связанных с требованием «no extraneous class», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-extraneous-class.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-extraneous-class выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-extraneous-class
+function examplePassingSuspicious() {
+  // Требование «no extraneous class» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-extraneous-class сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-extraneous-class
+function exampleFailingSuspicious() {
+  // Требование «no extraneous class» нарушено.
+  return false;
+}
 ```

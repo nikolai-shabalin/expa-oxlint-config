@@ -1,12 +1,25 @@
 # correctness/no-shadow-restricted-names
-Правило `no-shadow-restricted-names` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-shadow-restricted-names.
+
+Правило `no-shadow-restricted-names` из набора `correctness` контролирует аспект «No Shadow Restricted Names». Оно помогает избегать проблем в коде, связанных с требованием «no shadow restricted names», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-shadow-restricted-names.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-shadow-restricted-names выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-shadow-restricted-names
+function examplePassingCorrectness() {
+  // Требование «no shadow restricted names» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-shadow-restricted-names сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-shadow-restricted-names
+function exampleFailingCorrectness() {
+  // Требование «no shadow restricted names» нарушено.
+  return false;
+}
 ```

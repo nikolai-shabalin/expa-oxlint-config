@@ -1,12 +1,25 @@
 # suspicious/iframe-missing-sandbox
-Правило `iframe-missing-sandbox` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/iframe-missing-sandbox.
+
+Правило `iframe-missing-sandbox` из набора `suspicious` контролирует аспект «Iframe Missing Sandbox». Оно помогает избегать проблем в коде, связанных с требованием «iframe missing sandbox», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/iframe-missing-sandbox.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/iframe-missing-sandbox выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/iframe-missing-sandbox
+function examplePassingSuspicious() {
+  // Требование «iframe missing sandbox» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/iframe-missing-sandbox сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/iframe-missing-sandbox
+function exampleFailingSuspicious() {
+  // Требование «iframe missing sandbox» нарушено.
+  return false;
+}
 ```

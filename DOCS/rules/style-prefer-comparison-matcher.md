@@ -1,12 +1,25 @@
 # style/prefer-comparison-matcher
-Правило `prefer-comparison-matcher` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-comparison-matcher.
+
+Правило `prefer-comparison-matcher` из набора `style` контролирует аспект «Prefer Comparison Matcher». Оно помогает избегать проблем в коде, связанных с требованием «prefer comparison matcher», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-comparison-matcher.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-comparison-matcher выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-comparison-matcher
+function examplePassingStyle() {
+  // Требование «prefer comparison matcher» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-comparison-matcher сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-comparison-matcher
+function exampleFailingStyle() {
+  // Требование «prefer comparison matcher» нарушено.
+  return false;
+}
 ```

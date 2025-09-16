@@ -1,12 +1,25 @@
 # restriction/extensions
-Правило `extensions` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/extensions.
+
+Правило `extensions` из набора `restriction` контролирует аспект «Extensions». Оно помогает избегать проблем в коде, связанных с требованием «extensions», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/extensions.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/extensions выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/extensions
+function examplePassingRestriction() {
+  // Требование «extensions» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/extensions сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/extensions
+function exampleFailingRestriction() {
+  // Требование «extensions» нарушено.
+  return false;
+}
 ```

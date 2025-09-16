@@ -1,12 +1,25 @@
 # correctness/no-new-statics
-Правило `no-new-statics` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-statics.
+
+Правило `no-new-statics` из набора `correctness` контролирует аспект «No New Statics». Оно помогает избегать проблем в коде, связанных с требованием «no new statics», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-new-statics.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-new-statics выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-statics
+function examplePassingCorrectness() {
+  // Требование «no new statics» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-new-statics сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-statics
+function exampleFailingCorrectness() {
+  // Требование «no new statics» нарушено.
+  return false;
+}
 ```

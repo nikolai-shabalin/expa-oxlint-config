@@ -1,12 +1,25 @@
 # correctness/no-constant-binary-expression
-Правило `no-constant-binary-expression` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-constant-binary-expression.
+
+Правило `no-constant-binary-expression` из набора `correctness` контролирует аспект «No Constant Binary Expression». Оно помогает избегать проблем в коде, связанных с требованием «no constant binary expression», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-constant-binary-expression.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-constant-binary-expression выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-constant-binary-expression
+function examplePassingCorrectness() {
+  // Требование «no constant binary expression» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-constant-binary-expression сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-constant-binary-expression
+function exampleFailingCorrectness() {
+  // Требование «no constant binary expression» нарушено.
+  return false;
+}
 ```

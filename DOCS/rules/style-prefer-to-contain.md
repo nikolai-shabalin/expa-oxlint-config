@@ -1,12 +1,25 @@
 # style/prefer-to-contain
-Правило `prefer-to-contain` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-to-contain.
+
+Правило `prefer-to-contain` из набора `style` контролирует аспект «Prefer To Contain». Оно помогает избегать проблем в коде, связанных с требованием «prefer to contain», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-to-contain.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-to-contain выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-to-contain
+function examplePassingStyle() {
+  // Требование «prefer to contain» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-to-contain сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-to-contain
+function exampleFailingStyle() {
+  // Требование «prefer to contain» нарушено.
+  return false;
+}
 ```

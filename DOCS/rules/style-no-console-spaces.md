@@ -1,12 +1,25 @@
 # style/no-console-spaces
-Правило `no-console-spaces` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-console-spaces.
+
+Правило `no-console-spaces` из набора `style` контролирует аспект «No Console Spaces». Оно помогает избегать проблем в коде, связанных с требованием «no console spaces», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-console-spaces.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-console-spaces выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-console-spaces
+function examplePassingStyle() {
+  // Требование «no console spaces» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-console-spaces сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-console-spaces
+function exampleFailingStyle() {
+  // Требование «no console spaces» нарушено.
+  return false;
+}
 ```

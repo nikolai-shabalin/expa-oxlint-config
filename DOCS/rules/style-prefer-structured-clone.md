@@ -1,12 +1,25 @@
 # style/prefer-structured-clone
-Правило `prefer-structured-clone` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-structured-clone.
+
+Правило `prefer-structured-clone` из набора `style` контролирует аспект «Prefer Structured Clone». Оно помогает избегать проблем в коде, связанных с требованием «prefer structured clone», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-structured-clone.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-structured-clone выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-structured-clone
+function examplePassingStyle() {
+  // Требование «prefer structured clone» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-structured-clone сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-structured-clone
+function exampleFailingStyle() {
+  // Требование «prefer structured clone» нарушено.
+  return false;
+}
 ```

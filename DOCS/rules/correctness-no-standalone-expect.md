@@ -1,12 +1,25 @@
 # correctness/no-standalone-expect
-Правило `no-standalone-expect` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-standalone-expect.
+
+Правило `no-standalone-expect` из набора `correctness` контролирует аспект «No Standalone Expect». Оно помогает избегать проблем в коде, связанных с требованием «no standalone expect», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-standalone-expect.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-standalone-expect выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-standalone-expect
+function examplePassingCorrectness() {
+  // Требование «no standalone expect» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-standalone-expect сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-standalone-expect
+function exampleFailingCorrectness() {
+  // Требование «no standalone expect» нарушено.
+  return false;
+}
 ```

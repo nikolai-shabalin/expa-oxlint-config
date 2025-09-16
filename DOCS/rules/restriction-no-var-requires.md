@@ -1,12 +1,25 @@
 # restriction/no-var-requires
-Правило `no-var-requires` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-var-requires.
+
+Правило `no-var-requires` из набора `restriction` контролирует аспект «No Var Requires». Оно помогает избегать проблем в коде, связанных с требованием «no var requires», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-var-requires.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-var-requires выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-var-requires
+function examplePassingRestriction() {
+  // Требование «no var requires» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-var-requires сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-var-requires
+function exampleFailingRestriction() {
+  // Требование «no var requires» нарушено.
+  return false;
+}
 ```

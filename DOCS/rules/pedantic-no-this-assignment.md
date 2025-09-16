@@ -1,12 +1,25 @@
 # pedantic/no-this-assignment
-Правило `no-this-assignment` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-this-assignment.
+
+Правило `no-this-assignment` из набора `pedantic` контролирует аспект «No This Assignment». Оно помогает избегать проблем в коде, связанных с требованием «no this assignment», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-this-assignment.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/no-this-assignment выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-this-assignment
+function examplePassingPedantic() {
+  // Требование «no this assignment» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/no-this-assignment сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-this-assignment
+function exampleFailingPedantic() {
+  // Требование «no this assignment» нарушено.
+  return false;
+}
 ```

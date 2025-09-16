@@ -1,12 +1,25 @@
 # correctness/no-thenable
-Правило `no-thenable` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-thenable.
+
+Правило `no-thenable` из набора `correctness` контролирует аспект «No Thenable». Оно помогает избегать проблем в коде, связанных с требованием «no thenable», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-thenable.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-thenable выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-thenable
+function examplePassingCorrectness() {
+  // Требование «no thenable» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-thenable сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-thenable
+function exampleFailingCorrectness() {
+  // Требование «no thenable» нарушено.
+  return false;
+}
 ```

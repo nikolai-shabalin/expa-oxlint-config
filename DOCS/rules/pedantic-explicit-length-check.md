@@ -1,12 +1,25 @@
 # pedantic/explicit-length-check
-Правило `explicit-length-check` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/explicit-length-check.
+
+Правило `explicit-length-check` из набора `pedantic` контролирует аспект «Explicit Length Check». Оно помогает избегать проблем в коде, связанных с требованием «explicit length check», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/explicit-length-check.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/explicit-length-check выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/explicit-length-check
+function examplePassingPedantic() {
+  // Требование «explicit length check» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/explicit-length-check сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/explicit-length-check
+function exampleFailingPedantic() {
+  // Требование «explicit length check» нарушено.
+  return false;
+}
 ```

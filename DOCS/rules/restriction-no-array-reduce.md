@@ -1,12 +1,25 @@
 # restriction/no-array-reduce
-Правило `no-array-reduce` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reduce.
+
+Правило `no-array-reduce` из набора `restriction` контролирует аспект «No Array Reduce». Оно помогает избегать проблем в коде, связанных с требованием «no array reduce», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reduce.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-array-reduce выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reduce
+function examplePassingRestriction() {
+  // Требование «no array reduce» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-array-reduce сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-array-reduce
+function exampleFailingRestriction() {
+  // Требование «no array reduce» нарушено.
+  return false;
+}
 ```

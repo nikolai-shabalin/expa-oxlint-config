@@ -1,12 +1,25 @@
 # correctness/no-new-array
-Правило `no-new-array` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-array.
+
+Правило `no-new-array` из набора `correctness` контролирует аспект «No New Array». Оно помогает избегать проблем в коде, связанных с требованием «no new array», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-new-array.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-new-array выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-array
+function examplePassingCorrectness() {
+  // Требование «no new array» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-new-array сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-array
+function exampleFailingCorrectness() {
+  // Требование «no new array» нарушено.
+  return false;
+}
 ```

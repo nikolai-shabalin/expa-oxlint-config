@@ -1,12 +1,25 @@
 # correctness/valid-describe-callback
-Правило `valid-describe-callback` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/valid-describe-callback.
+
+Правило `valid-describe-callback` из набора `correctness` контролирует аспект «Valid Describe Callback». Оно помогает избегать проблем в коде, связанных с требованием «valid describe callback», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/valid-describe-callback.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/valid-describe-callback выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/valid-describe-callback
+function examplePassingCorrectness() {
+  // Требование «valid describe callback» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/valid-describe-callback сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/valid-describe-callback
+function exampleFailingCorrectness() {
+  // Требование «valid describe callback» нарушено.
+  return false;
+}
 ```

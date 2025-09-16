@@ -1,12 +1,25 @@
 # style/prefer-object-spread
-Правило `prefer-object-spread` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-spread.
+
+Правило `prefer-object-spread` из набора `style` контролирует аспект «Prefer Object Spread». Оно помогает избегать проблем в коде, связанных с требованием «prefer object spread», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-spread.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-object-spread выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-spread
+function examplePassingStyle() {
+  // Требование «prefer object spread» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-object-spread сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-object-spread
+function exampleFailingStyle() {
+  // Требование «prefer object spread» нарушено.
+  return false;
+}
 ```

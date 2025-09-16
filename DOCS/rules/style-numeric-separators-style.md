@@ -1,12 +1,25 @@
 # style/numeric-separators-style
-Правило `numeric-separators-style` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/numeric-separators-style.
+
+Правило `numeric-separators-style` из набора `style` контролирует аспект «Numeric Separators Style». Оно помогает избегать проблем в коде, связанных с требованием «numeric separators style», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/numeric-separators-style.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/numeric-separators-style выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/numeric-separators-style
+function examplePassingStyle() {
+  // Требование «numeric separators style» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/numeric-separators-style сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/numeric-separators-style
+function exampleFailingStyle() {
+  // Требование «numeric separators style» нарушено.
+  return false;
+}
 ```

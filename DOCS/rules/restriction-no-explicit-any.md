@@ -1,12 +1,25 @@
 # restriction/no-explicit-any
-Правило `no-explicit-any` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-explicit-any.
+
+Правило `no-explicit-any` из набора `restriction` контролирует аспект «No Explicit Any». Оно помогает избегать проблем в коде, связанных с требованием «no explicit any», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-explicit-any.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-explicit-any выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-explicit-any
+function examplePassingRestriction() {
+  // Требование «no explicit any» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-explicit-any сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-explicit-any
+function exampleFailingRestriction() {
+  // Требование «no explicit any» нарушено.
+  return false;
+}
 ```

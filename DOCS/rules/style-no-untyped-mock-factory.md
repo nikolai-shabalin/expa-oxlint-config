@@ -1,12 +1,25 @@
 # style/no-untyped-mock-factory
-Правило `no-untyped-mock-factory` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-untyped-mock-factory.
+
+Правило `no-untyped-mock-factory` из набора `style` контролирует аспект «No Untyped Mock Factory». Оно помогает избегать проблем в коде, связанных с требованием «no untyped mock factory», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-untyped-mock-factory.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-untyped-mock-factory выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-untyped-mock-factory
+function examplePassingStyle() {
+  // Требование «no untyped mock factory» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-untyped-mock-factory сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-untyped-mock-factory
+function exampleFailingStyle() {
+  // Требование «no untyped mock factory» нарушено.
+  return false;
+}
 ```

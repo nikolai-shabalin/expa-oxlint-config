@@ -1,12 +1,25 @@
 # suspicious/no-unnecessary-type-assertion
-Правило `no-unnecessary-type-assertion` из набора `suspicious` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unnecessary-type-assertion.
+
+Правило `no-unnecessary-type-assertion` из набора `suspicious` контролирует аспект «No Unnecessary Type Assertion». Оно помогает избегать проблем в коде, связанных с требованием «no unnecessary type assertion», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-unnecessary-type-assertion.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило suspicious/no-unnecessary-type-assertion выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unnecessary-type-assertion
+function examplePassingSuspicious() {
+  // Требование «no unnecessary type assertion» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило suspicious/no-unnecessary-type-assertion сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unnecessary-type-assertion
+function exampleFailingSuspicious() {
+  // Требование «no unnecessary type assertion» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # style/no-labels
-Правило `no-labels` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-labels.
+
+Правило `no-labels` из набора `style` контролирует аспект «No Labels». Оно помогает избегать проблем в коде, связанных с требованием «no labels», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-labels.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-labels выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-labels
+function examplePassingStyle() {
+  // Требование «no labels» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-labels сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-labels
+function exampleFailingStyle() {
+  // Требование «no labels» нарушено.
+  return false;
+}
 ```

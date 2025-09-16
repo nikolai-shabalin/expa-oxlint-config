@@ -1,12 +1,25 @@
 # style/no-hooks
-Правило `no-hooks` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-hooks.
+
+Правило `no-hooks` из набора `style` контролирует аспект «No Hooks». Оно помогает избегать проблем в коде, связанных с требованием «no hooks», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-hooks.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-hooks выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-hooks
+function examplePassingStyle() {
+  // Требование «no hooks» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-hooks сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-hooks
+function exampleFailingStyle() {
+  // Требование «no hooks» нарушено.
+  return false;
+}
 ```

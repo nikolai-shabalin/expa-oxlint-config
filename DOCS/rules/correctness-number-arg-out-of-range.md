@@ -1,12 +1,25 @@
 # correctness/number-arg-out-of-range
-Правило `number-arg-out-of-range` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/number-arg-out-of-range.
+
+Правило `number-arg-out-of-range` из набора `correctness` контролирует аспект «Number Arg Out Of Range». Оно помогает избегать проблем в коде, связанных с требованием «number arg out of range», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/number-arg-out-of-range.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/number-arg-out-of-range выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/number-arg-out-of-range
+function examplePassingCorrectness() {
+  // Требование «number arg out of range» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/number-arg-out-of-range сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/number-arg-out-of-range
+function exampleFailingCorrectness() {
+  // Требование «number arg out of range» нарушено.
+  return false;
+}
 ```

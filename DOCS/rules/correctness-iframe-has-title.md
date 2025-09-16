@@ -1,12 +1,25 @@
 # correctness/iframe-has-title
-Правило `iframe-has-title` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/iframe-has-title.
+
+Правило `iframe-has-title` из набора `correctness` контролирует аспект «Iframe Has Title». Оно помогает избегать проблем в коде, связанных с требованием «iframe has title», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/iframe-has-title.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/iframe-has-title выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/iframe-has-title
+function examplePassingCorrectness() {
+  // Требование «iframe has title» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/iframe-has-title сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/iframe-has-title
+function exampleFailingCorrectness() {
+  // Требование «iframe has title» нарушено.
+  return false;
+}
 ```

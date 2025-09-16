@@ -1,12 +1,25 @@
 # correctness/no-empty-pattern
-Правило `no-empty-pattern` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-pattern.
+
+Правило `no-empty-pattern` из набора `correctness` контролирует аспект «No Empty Pattern». Оно помогает избегать проблем в коде, связанных с требованием «no empty pattern», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-pattern.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-empty-pattern выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-pattern
+function examplePassingCorrectness() {
+  // Требование «no empty pattern» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-empty-pattern сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-pattern
+function exampleFailingCorrectness() {
+  // Требование «no empty pattern» нарушено.
+  return false;
+}
 ```

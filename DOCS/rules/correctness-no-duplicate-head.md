@@ -1,12 +1,25 @@
 # correctness/no-duplicate-head
-Правило `no-duplicate-head` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicate-head.
+
+Правило `no-duplicate-head` из набора `correctness` контролирует аспект «No Duplicate Head». Оно помогает избегать проблем в коде, связанных с требованием «no duplicate head», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicate-head.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-duplicate-head выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicate-head
+function examplePassingCorrectness() {
+  // Требование «no duplicate head» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-duplicate-head сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-duplicate-head
+function exampleFailingCorrectness() {
+  // Требование «no duplicate head» нарушено.
+  return false;
+}
 ```

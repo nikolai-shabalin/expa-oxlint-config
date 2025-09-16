@@ -1,12 +1,25 @@
 # style/prefer-negative-index
-Правило `prefer-negative-index` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-negative-index.
+
+Правило `prefer-negative-index` из набора `style` контролирует аспект «Prefer Negative Index». Оно помогает избегать проблем в коде, связанных с требованием «prefer negative index», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-negative-index.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-negative-index выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-negative-index
+function examplePassingStyle() {
+  // Требование «prefer negative index» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-negative-index сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-negative-index
+function exampleFailingStyle() {
+  // Требование «prefer negative index» нарушено.
+  return false;
+}
 ```

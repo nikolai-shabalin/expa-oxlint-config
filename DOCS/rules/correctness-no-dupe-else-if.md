@@ -1,12 +1,25 @@
 # correctness/no-dupe-else-if
-Правило `no-dupe-else-if` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-else-if.
+
+Правило `no-dupe-else-if` из набора `correctness` контролирует аспект «No Dupe Else If». Оно помогает избегать проблем в коде, связанных с требованием «no dupe else if», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-else-if.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-dupe-else-if выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-else-if
+function examplePassingCorrectness() {
+  // Требование «no dupe else if» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-dupe-else-if сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-else-if
+function exampleFailingCorrectness() {
+  // Требование «no dupe else if» нарушено.
+  return false;
+}
 ```

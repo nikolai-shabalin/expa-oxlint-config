@@ -1,12 +1,25 @@
 # restriction/no-plusplus
-Правило `no-plusplus` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-plusplus.
+
+Правило `no-plusplus` из набора `restriction` контролирует аспект «No Plusplus». Оно помогает избегать проблем в коде, связанных с требованием «no plusplus», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-plusplus.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-plusplus выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-plusplus
+function examplePassingRestriction() {
+  // Требование «no plusplus» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-plusplus сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-plusplus
+function exampleFailingRestriction() {
+  // Требование «no plusplus» нарушено.
+  return false;
+}
 ```

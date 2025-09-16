@@ -1,12 +1,25 @@
 # correctness/no-dupe-keys
-Правило `no-dupe-keys` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-keys.
+
+Правило `no-dupe-keys` из набора `correctness` контролирует аспект «No Dupe Keys». Оно помогает избегать проблем в коде, связанных с требованием «no dupe keys», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-keys.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-dupe-keys выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-keys
+function examplePassingCorrectness() {
+  // Требование «no dupe keys» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-dupe-keys сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-dupe-keys
+function exampleFailingCorrectness() {
+  // Требование «no dupe keys» нарушено.
+  return false;
+}
 ```

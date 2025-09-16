@@ -1,12 +1,25 @@
 # restriction/no-unused-expressions
-Правило `no-unused-expressions` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-expressions.
+
+Правило `no-unused-expressions` из набора `restriction` контролирует аспект «No Unused Expressions». Оно помогает избегать проблем в коде, связанных с требованием «no unused expressions», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-expressions.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-unused-expressions выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-expressions
+function examplePassingRestriction() {
+  // Требование «no unused expressions» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-unused-expressions сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-unused-expressions
+function exampleFailingRestriction() {
+  // Требование «no unused expressions» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # restriction/no-amd
-Правило `no-amd` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-amd.
+
+Правило `no-amd` из набора `restriction` контролирует аспект «No Amd». Оно помогает избегать проблем в коде, связанных с требованием «no amd», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-amd.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-amd выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-amd
+function examplePassingRestriction() {
+  // Требование «no amd» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-amd сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-amd
+function exampleFailingRestriction() {
+  // Требование «no amd» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # style/no-zero-fractions
-Правило `no-zero-fractions` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-zero-fractions.
+
+Правило `no-zero-fractions` из набора `style` контролирует аспект «No Zero Fractions». Оно помогает избегать проблем в коде, связанных с требованием «no zero fractions», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-zero-fractions.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/no-zero-fractions выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-zero-fractions
+function examplePassingStyle() {
+  // Требование «no zero fractions» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/no-zero-fractions сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-zero-fractions
+function exampleFailingStyle() {
+  // Требование «no zero fractions» нарушено.
+  return false;
+}
 ```

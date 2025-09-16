@@ -1,12 +1,25 @@
 # correctness/no-nonoctal-decimal-escape
-Правило `no-nonoctal-decimal-escape` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-nonoctal-decimal-escape.
+
+Правило `no-nonoctal-decimal-escape` из набора `correctness` контролирует аспект «No Nonoctal Decimal Escape». Оно помогает избегать проблем в коде, связанных с требованием «no nonoctal decimal escape», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-nonoctal-decimal-escape.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-nonoctal-decimal-escape выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-nonoctal-decimal-escape
+function examplePassingCorrectness() {
+  // Требование «no nonoctal decimal escape» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-nonoctal-decimal-escape сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-nonoctal-decimal-escape
+function exampleFailingCorrectness() {
+  // Требование «no nonoctal decimal escape» нарушено.
+  return false;
+}
 ```

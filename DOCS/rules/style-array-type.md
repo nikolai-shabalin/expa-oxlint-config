@@ -1,12 +1,25 @@
 # style/array-type
-Правило `array-type` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/array-type.
+
+Правило `array-type` из набора `style` контролирует аспект «Array Type». Оно помогает избегать проблем в коде, связанных с требованием «array type», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/array-type.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/array-type выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/array-type
+function examplePassingStyle() {
+  // Требование «array type» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/array-type сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/array-type
+function exampleFailingStyle() {
+  // Требование «array type» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # restriction/promise-function-async
-Правило `promise-function-async` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/promise-function-async.
+
+Правило `promise-function-async` из набора `restriction` контролирует аспект «Promise Function Async». Оно помогает избегать проблем в коде, связанных с требованием «promise function async», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/promise-function-async.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/promise-function-async выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/promise-function-async
+function examplePassingRestriction() {
+  // Требование «promise function async» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/promise-function-async сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/promise-function-async
+function exampleFailingRestriction() {
+  // Требование «promise function async» нарушено.
+  return false;
+}
 ```

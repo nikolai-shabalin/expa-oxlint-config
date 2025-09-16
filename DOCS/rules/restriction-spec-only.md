@@ -1,12 +1,25 @@
 # restriction/spec-only
-Правило `spec-only` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/spec-only.
+
+Правило `spec-only` из набора `restriction` контролирует аспект «Spec Only». Оно помогает избегать проблем в коде, связанных с требованием «spec only», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/spec-only.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/spec-only выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/spec-only
+function examplePassingRestriction() {
+  // Требование «spec only» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/spec-only сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/spec-only
+function exampleFailingRestriction() {
+  // Требование «spec only» нарушено.
+  return false;
+}
 ```

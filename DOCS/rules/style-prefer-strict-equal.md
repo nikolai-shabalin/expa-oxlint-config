@@ -1,12 +1,25 @@
 # style/prefer-strict-equal
-Правило `prefer-strict-equal` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-strict-equal.
+
+Правило `prefer-strict-equal` из набора `style` контролирует аспект «Prefer Strict Equal». Оно помогает избегать проблем в коде, связанных с требованием «prefer strict equal», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/prefer-strict-equal.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/prefer-strict-equal выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-strict-equal
+function examplePassingStyle() {
+  // Требование «prefer strict equal» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/prefer-strict-equal сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/prefer-strict-equal
+function exampleFailingStyle() {
+  // Требование «prefer strict equal» нарушено.
+  return false;
+}
 ```

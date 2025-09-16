@@ -1,12 +1,25 @@
 # restriction/no-empty-object-type
-Правило `no-empty-object-type` из набора `restriction` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-object-type.
+
+Правило `no-empty-object-type` из набора `restriction` контролирует аспект «No Empty Object Type». Оно помогает избегать проблем в коде, связанных с требованием «no empty object type», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-object-type.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило restriction/no-empty-object-type выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-object-type
+function examplePassingRestriction() {
+  // Требование «no empty object type» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило restriction/no-empty-object-type сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-empty-object-type
+function exampleFailingRestriction() {
+  // Требование «no empty object type» нарушено.
+  return false;
+}
 ```

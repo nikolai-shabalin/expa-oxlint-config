@@ -1,12 +1,25 @@
 # style/consistent-type-specifier-style
-Правило `consistent-type-specifier-style` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-type-specifier-style.
+
+Правило `consistent-type-specifier-style` из набора `style` контролирует аспект «Consistent Type Specifier Style». Оно помогает избегать проблем в коде, связанных с требованием «consistent type specifier style», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/consistent-type-specifier-style.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/consistent-type-specifier-style выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-type-specifier-style
+function examplePassingStyle() {
+  // Требование «consistent type specifier style» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/consistent-type-specifier-style сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/consistent-type-specifier-style
+function exampleFailingStyle() {
+  // Требование «consistent type specifier style» нарушено.
+  return false;
+}
 ```

@@ -1,12 +1,25 @@
 # pedantic/no-new-wrappers
-Правило `no-new-wrappers` из набора `pedantic` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-wrappers.
+
+Правило `no-new-wrappers` из набора `pedantic` контролирует аспект «No New Wrappers». Оно помогает избегать проблем в коде, связанных с требованием «no new wrappers», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-new-wrappers.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило pedantic/no-new-wrappers выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-wrappers
+function examplePassingPedantic() {
+  // Требование «no new wrappers» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило pedantic/no-new-wrappers сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-new-wrappers
+function exampleFailingPedantic() {
+  // Требование «no new wrappers» нарушено.
+  return false;
+}
 ```

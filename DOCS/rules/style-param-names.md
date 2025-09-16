@@ -1,12 +1,25 @@
 # style/param-names
-Правило `param-names` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/param-names.
+
+Правило `param-names` из набора `style` контролирует аспект «Param Names». Оно помогает избегать проблем в коде, связанных с требованием «param names», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/param-names.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/param-names выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/param-names
+function examplePassingStyle() {
+  // Требование «param names» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/param-names сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/param-names
+function exampleFailingStyle() {
+  // Требование «param names» нарушено.
+  return false;
+}
 ```

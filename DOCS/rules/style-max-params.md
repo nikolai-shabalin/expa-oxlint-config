@@ -1,12 +1,25 @@
 # style/max-params
-Правило `max-params` из набора `style` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/max-params.
+
+Правило `max-params` из набора `style` контролирует аспект «Max Params». Оно помогает избегать проблем в коде, связанных с требованием «max params», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/max-params.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило style/max-params выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-params
+function examplePassingStyle() {
+  // Требование «max params» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило style/max-params сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/max-params
+function exampleFailingStyle() {
+  // Требование «max params» нарушено.
+  return false;
+}
 ```

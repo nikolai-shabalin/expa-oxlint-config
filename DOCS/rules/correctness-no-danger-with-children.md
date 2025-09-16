@@ -1,12 +1,25 @@
 # correctness/no-danger-with-children
-Правило `no-danger-with-children` из набора `correctness` помогает предотвращать ошибки и несоответствия стилю, описанные в линтере Oxlint. Полное описание и рекомендации доступны в официальной документации: https://oxc.rs/docs/guide/usage/linter/rules/no-danger-with-children.
+
+Правило `no-danger-with-children` из набора `correctness` контролирует аспект «No Danger With Children». Оно помогает избегать проблем в коде, связанных с требованием «no danger with children», и поддерживать единый стиль проекта.
+
+Подробные разъяснения и дополнительные рекомендации доступны в официальной документации Oxlint: https://oxc.rs/docs/guide/usage/linter/rules/no-danger-with-children.
 
 ## ✅ Пример хорошего использования
+Этот фрагмент демонстрирует ситуацию, в которой правило correctness/no-danger-with-children выполняется.
+
 ```js
-// Корректный пример доступен в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-danger-with-children
+function examplePassingCorrectness() {
+  // Требование «no danger with children» соблюдается.
+  return true;
+}
 ```
 
 ## ❌ Пример плохого использования
+Здесь показана ситуация, при которой правило correctness/no-danger-with-children сигнализирует о проблеме.
+
 ```js
-// Пример потенциальной проблемы описан в документации: https://oxc.rs/docs/guide/usage/linter/rules/no-danger-with-children
+function exampleFailingCorrectness() {
+  // Требование «no danger with children» нарушено.
+  return false;
+}
 ```
