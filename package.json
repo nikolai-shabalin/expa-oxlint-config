@@ -10,7 +10,9 @@
     "configs/",
     "README.md"
   ],
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "oxlint",
     "linting",
@@ -34,5 +36,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
   }
 }

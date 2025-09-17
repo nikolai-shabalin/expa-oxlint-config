@@ -1,0 +1,4111 @@
+{
+  "Correctness (194): ​": {
+    "description": "Code that is outright wrong or useless.",
+    "rules": [
+      {
+        "name": "for-direction",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-async-promise-executor",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-caller",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-class-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-compare-neg-zero",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️💡",
+        "hasError": false
+      },
+      {
+        "name": "no-cond-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-const-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-constant-binary-expression",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-constant-condition",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-control-regex",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-debugger",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-delete-var",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-dupe-class-members",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-dupe-else-if",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-dupe-keys",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicate-case",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-character-class",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-pattern",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-static-block",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-eval",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-ex-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-extra-boolean-cast",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️💡",
+        "hasError": false
+      },
+      {
+        "name": "no-func-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-global-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-import-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-invalid-regexp",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-irregular-whitespace",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-loss-of-precision",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-new-native-nonconstructor",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-nonoctal-decimal-escape",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-obj-calls",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-self-assign",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-setter-return",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-shadow-restricted-names",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-sparse-arrays",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-this-before-super",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unassigned-vars",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-finally",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-negation",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-optional-chaining",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unused-labels",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-unused-private-class-members",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unused-vars",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "⚠️💡",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-backreference",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-catch",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-escape",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-rename",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-with",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-yield",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "use-isnan",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "valid-typeof",
+        "source": "eslint",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "default",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "namespace",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "expect-expect",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-conditional-expect",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-disabled-tests",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-export",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-focused-tests",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-standalone-expect",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-to-throw-message",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "valid-describe-callback",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "valid-expect",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "valid-title",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "check-property-names",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "check-tag-names",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "implements-on-classes",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-defaults",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-property",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-property-description",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-property-name",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-property-type",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-yields",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "alt-text",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "anchor-has-content",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "anchor-is-valid",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "aria-activedescendant-has-tabindex",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "aria-props",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "aria-role",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "aria-unsupported-elements",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "autocomplete-valid",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "click-events-have-key-events",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "heading-has-content",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "html-has-lang",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "iframe-has-title",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "img-redundant-alt",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "label-has-associated-control",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "lang",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "media-has-caption",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "mouse-events-have-key-events",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-access-key",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-aria-hidden-on-focusable",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-autofocus",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-distracting-elements",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-noninteractive-tabindex",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-redundant-roles",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-tag-over-role",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "role-has-required-aria-props",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "role-supports-aria-props",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "scope",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "tabindex-no-positive",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "⚠️💡",
+        "hasError": false
+      },
+      {
+        "name": "google-font-display",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "google-font-preconnect",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "inline-script-id",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "next-script-for-ga",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-assign-module-variable",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-async-client-component",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-before-interactive-script-outside-document",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-css-tags",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-document-import-in-page",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicate-head",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-head-element",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-head-import-in-document",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-html-link-for-pages",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-img-element",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-page-custom-font",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-script-component-in-head",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-styled-jsx-in-document",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-sync-scripts",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-title-in-document-head",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-typos",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unwanted-polyfillio",
+        "source": "nextjs",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-array-method-on-arguments",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-char-at-comparison",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-comparison-sequence",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-min-max-func",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-object-literal-comparison",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-replace-all-arg",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "const-comparisons",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "double-comparisons",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "erasing-op",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "missing-throw",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "number-arg-out-of-range",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "only-used-in-recursion",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "uninvoked-array-callback",
+        "source": "oxc",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-callback-in-promise",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-new-statics",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "valid-params",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "exhaustive-deps",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️💡",
+        "hasError": false
+      },
+      {
+        "name": "forward-ref-uses-ref",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "jsx-key",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-duplicate-props",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-target-blank",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-undef",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-props-no-spread-multi",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-children-prop",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-danger-with-children",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-direct-mutation-state",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-find-dom-node",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-is-mounted",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-render-return-value",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-string-refs",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "void-dom-elements-no-children",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "await-thenable",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-array-delete",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-base-to-string",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicate-enum-values",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicate-type-constituents",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-extra-non-null-assertion",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-floating-promises",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-for-in-array",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-implied-eval",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-meaningless-void-operator",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-misused-new",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-misused-spread",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-non-null-asserted-optional-chain",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-redundant-type-constituents",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-this-alias",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-parameter-property-assignment",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-declaration-merging",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-unary-minus",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-empty-export",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-wrapper-object-types",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-as-const",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "require-array-sort-compare",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "restrict-template-expressions",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "triple-slash-reference",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "unbound-method",
+        "source": "typescript",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-await-in-promise-methods",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-file",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-invalid-fetch-options",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-invalid-remove-event-listener",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-new-array",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-single-promise-in-promise-methods",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-thenable",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-await",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-fallback-in-spread",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-length-check",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-spread",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-set-size",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-string-starts-ends-with",
+        "source": "unicorn",
+        "isDefault": true,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-conditional-tests",
+        "source": "vitest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-local-test-context-for-concurrent-snapshots",
+        "source": "vitest",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "valid-define-emits",
+        "source": "vue",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "valid-define-props",
+        "source": "vue",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      }
+    ]
+  },
+  "Perf (11): ​": {
+    "description": "Code that can be written to run faster.",
+    "rules": [
+      {
+        "name": "no-await-in-loop",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-call",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-accumulating-spread",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-array-index-key",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-jsx-as-prop",
+        "source": "react_perf",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-new-array-as-prop",
+        "source": "react_perf",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-new-function-as-prop",
+        "source": "react_perf",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-new-object-as-prop",
+        "source": "react_perf",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-array-find",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-array-flat-map",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-set-has",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      }
+    ]
+  },
+  "Restriction (72): ​": {
+    "description": "Lints which prevent the use of language and library features. Must not be enabled as a whole, should be considered on a case-by-case basis before enabling.",
+    "rules": [
+      {
+        "name": "class-methods-use-this",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "default-case",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-alert",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-bitwise",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-console",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-div-regex",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-empty",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-function",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-eq-null",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-iterator",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-plusplus",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-proto",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-regex-spaces",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-restricted-globals",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-restricted-imports",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-undefined",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unused-expressions",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-var",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-void",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "unicode-bom",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "extensions",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-amd",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-commonjs",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-cycle",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-default-export",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-dynamic-require",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-webpack-loader-syntax",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "unambiguous",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "check-access",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "empty-tags",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "anchor-ambiguous-text",
+        "source": "jsx_a11y",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-new-require",
+        "source": "node",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "bad-bitwise-operator",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-async-await",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-barrel-file",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-const-enum",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-optional-chaining",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-rest-spread-properties",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "catch-or-return",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "spec-only",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "button-has-type",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "forbid-elements",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-filename-extension",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-danger",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unknown-property",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "explicit-function-return-type",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "explicit-module-boundary-types",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-dynamic-delete",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-object-type",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-explicit-any",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-import-type-side-effects",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-namespace",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-non-null-asserted-nullish-coalescing",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-non-null-assertion",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-require-imports",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-var-requires",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "non-nullable-type-assertion-style",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-literal-enum-member",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "promise-function-async",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "use-unknown-in-catch-callback-variable",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-abusive-eslint-disable",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-anonymous-default-export",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-array-for-each",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-array-reduce",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-document-cookie",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-length-as-slice-end",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-magic-array-flat-depth",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-process-exit",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-modern-math-apis",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-node-protocol",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-number-properties",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-multiple-slot-args",
+        "source": "vue",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      }
+    ]
+  },
+  "Suspicious (42): ​": {
+    "description": "code that is most likely wrong or useless.",
+    "rules": [
+      {
+        "name": "block-scoped-var",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-extend-native",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-extra-bind",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-new",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unexpected-multiline",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-unneeded-ternary",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-concat",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-constructor",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "preserve-caught-error",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-absolute-path",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-named-blocks",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-named-as-default",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-named-as-default-member",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-self-import",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unassigned-import",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-commented-out-tests",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "approx-constant",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "misrefactored-assign-op",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-async-endpoint-handlers",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "always-return",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-promise-in-callback",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "iframe-missing-sandbox",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-comment-textnodes",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-script-url",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-namespace",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "react-in-jsx-scope",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "style-prop-object",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-confusing-non-null-assertion",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-extraneous-class",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "⚠️💡",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-boolean-literal-compare",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-template-expression",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-type-arguments",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-type-assertion",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-type-constraint",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-enum-comparison",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-type-assertion",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "consistent-function-scoping",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-accessor-recursion",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-array-reverse",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-instanceof-builtins",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-add-event-listener",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "require-post-message-target-origin",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      }
+    ]
+  },
+  "Pedantic (97): ​": {
+    "description": "Lints which are rather strict or have occasional false positives.",
+    "rules": [
+      {
+        "name": "array-callback-return",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "eqeqeq",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "max-classes-per-file",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-depth",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-lines",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-lines-per-function",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-nested-callbacks",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-array-constructor",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-case-declarations",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-constructor-return",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-else-return",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-fallthrough",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-inner-declarations",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-lonely-if",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-negated-condition",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-new-wrappers",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-object-constructor",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-prototype-builtins",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-redeclare",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-self-compare",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-throw-literal",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "radix",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "require-await",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "sort-vars",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "symbol-description",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-dependencies",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-conditional-in-test",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-param",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-param-description",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-param-name",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-param-type",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-returns",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-returns-description",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-returns-type",
+        "source": "jsdoc",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "checked-requires-onchange-or-readonly",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "jsx-no-useless-fragment",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "no-unescaped-entities",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "rules-of-hooks",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "ban-ts-comment",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "ban-types",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-confusing-void-expression",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-misused-promises",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-mixed-enums",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-argument",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-assignment",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-call",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-function-type",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-member-access",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unsafe-return",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "only-throw-error",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-enum-initializers",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-promise-reject-errors",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-ts-expect-error",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "related-getter-setter-pairs",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "require-await",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "restrict-plus-operands",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "return-await",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "switch-exhaustiveness-check",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "consistent-assert",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-empty-array-spread",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "escape-case",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "explicit-length-check",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "new-for-builtins",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-hex-escape",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-instanceof-array",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-lonely-if",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-negation-in-equality-check",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-new-buffer",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-object-as-default-parameter",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-static-only-class",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-this-assignment",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-typeof-undefined",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-array-flat-depth",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-unnecessary-slice-end",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-unreadable-iife",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-promise-resolve-reject",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-switch-case",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-undefined",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-array-flat",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-array-some",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-blob-reading-methods",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-code-point",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-date-now",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-dom-node-append",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-dom-node-dataset",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-dom-node-remove",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-event-target",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-math-min-max",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-math-trunc",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-native-coercion-functions",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-prototype-methods",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-query-selector",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-regexp-test",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-string-replace-all",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-string-slice",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-type-error",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "require-number-to-fixed-digits-argument",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      }
+    ]
+  },
+  "Style (158): ​": {
+    "description": "Code that should be written in a more idiomatic way.",
+    "rules": [
+      {
+        "name": "arrow-body-style",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "curly",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "default-case-last",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "default-param-last",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "func-names",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️💡",
+        "hasError": false
+      },
+      {
+        "name": "func-style",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "grouped-accessor-pairs",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "guard-for-in",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "id-length",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "init-declarations",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-params",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "new-cap",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-continue",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicate-imports",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-extra-label",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-label-var",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-labels",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-lone-blocks",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-magic-numbers",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-multi-assign",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-multi-str",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-nested-ternary",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-new-func",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-return-assign",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-script-url",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-template-curly-in-string",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-ternary",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-useless-computed-key",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "operator-assignment",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-destructuring",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-exponentiation-operator",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-numeric-literals",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-object-has-own",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-object-spread",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-promise-reject-errors",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-rest-params",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-spread",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-template",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "sort-imports",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "sort-keys",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "vars-on-top",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "yoda",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-type-specifier-style",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "exports-last",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "first",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "group-exports",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-anonymous-default-export",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicates",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-mutable-exports",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-named-default",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-namespace",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-default-export",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "consistent-test-it",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "max-expects",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "max-nested-describe",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-alias-methods",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-confusing-set-timeout",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-deprecated-functions",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-done-callback",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-duplicate-hooks",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-hooks",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-identical-title",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-interpolation-in-snapshots",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-jasmine-globals",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-large-snapshots",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-mocks-import",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-restricted-jest-methods",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-restricted-matchers",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-test-prefixes",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-test-return-statement",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-untyped-mock-factory",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "padding-around-test-blocks",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-called-with",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-comparison-matcher",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-each",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-equality-matcher",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-expect-resolves",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-hooks-in-order",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-hooks-on-top",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-jest-mocked",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-lowercase-title",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-mock-promise-shorthand",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-spy-on",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-strict-equal",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-to-be",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-to-contain",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-to-have-length",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-todo",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "require-hook",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-top-level-describe",
+        "source": "jest",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-exports-assign",
+        "source": "node",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "avoid-new",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-nesting",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-return-wrap",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "param-names",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-await-to-callbacks",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-await-to-then",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-catch",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "jsx-boolean-value",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "jsx-curly-brace-presence",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "jsx-fragments",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "jsx-handler-names",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-set-state",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-es6-class",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "self-closing-comp",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "adjacent-overload-signatures",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "array-type",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "ban-tslint-comment",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-generic-constructors",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "consistent-indexed-object-style",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-type-definitions",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-type-imports",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-empty-interface",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-inferrable-types",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-for-of",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-function-type",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-namespace-keyword",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-reduce-type-parameter",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-return-this-type",
+        "source": "typescript",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "catch-error-name",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-date-clone",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "consistent-existence-index-check",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "empty-brace-spaces",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "error-message",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "filename-case",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-array-method-this-argument",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "no-await-expression-member",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "⚠️🛠️️",
+        "hasError": false
+      },
+      {
+        "name": "no-console-spaces",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-nested-ternary",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-null",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-unreadable-array-destructuring",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-zero-fractions",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "number-literal-case",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "numeric-separators-style",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-array-index-of",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-dom-node-text-content",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-global-this",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-includes",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-logical-operator-over-ternary",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-modern-dom-apis",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-negative-index",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-object-from-entries",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "prefer-optional-catch-binding",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-reflect-apply",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "prefer-spread",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-string-raw",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-string-trim-start-end",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-structured-clone",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "💡",
+        "hasError": false
+      },
+      {
+        "name": "require-array-join-separator",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "switch-case-braces",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "text-encoding-identifier-case",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "throw-new-error",
+        "source": "unicorn",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "no-import-node-test",
+        "source": "vitest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-to-be-falsy",
+        "source": "vitest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-to-be-object",
+        "source": "vitest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "prefer-to-be-truthy",
+        "source": "vitest",
+        "isDefault": false,
+        "fixable": "🛠️",
+        "hasError": false
+      },
+      {
+        "name": "define-emits-declaration",
+        "source": "vue",
+        "isDefault": false,
+        "fixable": "🚧",
+        "hasError": false
+      },
+      {
+        "name": "define-props-declaration",
+        "source": "vue",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      }
+    ]
+  },
+  "Nursery (8): ​": {
+    "description": "New lints that are still under development.",
+    "rules": [
+      {
+        "name": "getter-return",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-undef",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-unreachable",
+        "source": "eslint",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "export",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "named",
+        "source": "import",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "no-map-spread",
+        "source": "oxc",
+        "isDefault": false,
+        "fixable": "🛠️💡",
+        "hasError": false
+      },
+      {
+        "name": "no-return-in-finally",
+        "source": "promise",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      },
+      {
+        "name": "require-render-return",
+        "source": "react",
+        "isDefault": false,
+        "fixable": "",
+        "hasError": false
+      }
+    ]
+  }
+}
